@@ -6,7 +6,7 @@ set(LIBS
         MLIROptLib
 	MLIRVCalc
         )
-add_llvm_executable(standalone-opt standalone-opt.cpp)
+add_llvm_executable(vcalc-opt vcalc-opt.cpp)
 
-llvm_update_compile_flags(standalone-opt)
-target_link_libraries(standalone-opt PRIVATE ${LIBS})
+llvm_update_compile_flags(vcalc-opt)
+target_link_libraries(vcalc-opt PRIVATE ${LIBS})
